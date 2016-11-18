@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854A7C5D1DDBF8E5006B780F /* evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A7C5C1DDBF8E5006B780F /* evento.swift */; };
+		854A7C651DDC02ED006B780F /* ViewControllerEvento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A7C641DDC02ED006B780F /* ViewControllerEvento.swift */; };
+		85508D641DDBAB55007C60EA /* DetallesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85508D631DDBAB55007C60EA /* DetallesController.swift */; };
+		85526C681DCCD156008A812C /* lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85526C671DCCD156008A812C /* lugar.swift */; };
+		856407A21DD26E990018F69D /* LugarCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856407A11DD26E990018F69D /* LugarCelda.swift */; };
 		85CAA10A1DCBC948003B4270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CAA1091DCBC948003B4270 /* AppDelegate.swift */; };
-		85CAA10C1DCBC948003B4270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CAA10B1DCBC948003B4270 /* ViewController.swift */; };
+		85CAA10C1DCBC948003B4270 /* ViewControllerLugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CAA10B1DCBC948003B4270 /* ViewControllerLugar.swift */; };
 		85CAA10F1DCBC948003B4270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CAA10D1DCBC948003B4270 /* Main.storyboard */; };
 		85CAA1111DCBC948003B4270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85CAA1101DCBC948003B4270 /* Assets.xcassets */; };
 		85CAA1141DCBC948003B4270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CAA1121DCBC948003B4270 /* LaunchScreen.storyboard */; };
 		85CAA11F1DCBC948003B4270 /* IntegracionwpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CAA11E1DCBC948003B4270 /* IntegracionwpTests.swift */; };
 		85CAA12A1DCBC948003B4270 /* IntegracionwpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CAA1291DCBC948003B4270 /* IntegracionwpUITests.swift */; };
+		85CAA14F1DCBCB15003B4270 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CAA1421DCBC9C7003B4270 /* Alamofire.framework */; };
+		85CAA1501DCBCB15003B4270 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85CAA1421DCBC9C7003B4270 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		85D28D3C1DDD48D80016A023 /* DetallesControllerEvento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D28D3B1DDD48D80016A023 /* DetallesControllerEvento.swift */; };
+		85E3D8C71DDCA6F70072C5D2 /* EventoCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E3D8C61DDCA6F70072C5D2 /* EventoCelda.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +40,87 @@
 			remoteGlobalIDString = 85CAA1051DCBC948003B4270;
 			remoteInfo = Integracionwp;
 		};
+		85CAA1411DCBC9C7003B4270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		85CAA1431DCBC9C7003B4270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		85CAA1451DCBC9C7003B4270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		85CAA1471DCBC9C7003B4270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		85CAA1491DCBC9C7003B4270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		85CAA14B1DCBC9C7003B4270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		85CAA14D1DCBC9C7003B4270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		85CAA1511DCBCB15003B4270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		85CAA1531DCBCB15003B4270 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				85CAA1501DCBCB15003B4270 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		854A7C5C1DDBF8E5006B780F /* evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = evento.swift; path = ../evento.swift; sourceTree = "<group>"; };
+		854A7C641DDC02ED006B780F /* ViewControllerEvento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerEvento.swift; path = ../ViewControllerEvento.swift; sourceTree = "<group>"; };
+		85508D631DDBAB55007C60EA /* DetallesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetallesController.swift; path = ../DetallesController.swift; sourceTree = "<group>"; };
+		85526C671DCCD156008A812C /* lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = lugar.swift; path = ../lugar.swift; sourceTree = "<group>"; };
+		856407A11DD26E990018F69D /* LugarCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarCelda.swift; sourceTree = "<group>"; };
 		85CAA1061DCBC948003B4270 /* Integracionwp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Integracionwp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CAA1091DCBC948003B4270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85CAA10B1DCBC948003B4270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85CAA10B1DCBC948003B4270 /* ViewControllerLugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLugar.swift; sourceTree = "<group>"; };
 		85CAA10E1DCBC948003B4270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85CAA1101DCBC948003B4270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85CAA1131DCBC948003B4270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +131,9 @@
 		85CAA1251DCBC948003B4270 /* IntegracionwpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegracionwpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CAA1291DCBC948003B4270 /* IntegracionwpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegracionwpUITests.swift; sourceTree = "<group>"; };
 		85CAA12B1DCBC948003B4270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		85D28D3B1DDD48D80016A023 /* DetallesControllerEvento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetallesControllerEvento.swift; path = ../DetallesControllerEvento.swift; sourceTree = "<group>"; };
+		85E3D8C61DDCA6F70072C5D2 /* EventoCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventoCelda.swift; path = ../EventoCelda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85CAA14F1DCBCB15003B4270 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +169,7 @@
 				85CAA11D1DCBC948003B4270 /* IntegracionwpTests */,
 				85CAA1281DCBC948003B4270 /* IntegracionwpUITests */,
 				85CAA1071DCBC948003B4270 /* Products */,
+				85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +186,15 @@
 		85CAA1081DCBC948003B4270 /* Integracionwp */ = {
 			isa = PBXGroup;
 			children = (
+				854A7C5C1DDBF8E5006B780F /* evento.swift */,
+				85526C671DCCD156008A812C /* lugar.swift */,
+				85D28D3B1DDD48D80016A023 /* DetallesControllerEvento.swift */,
+				85508D631DDBAB55007C60EA /* DetallesController.swift */,
 				85CAA1091DCBC948003B4270 /* AppDelegate.swift */,
-				85CAA10B1DCBC948003B4270 /* ViewController.swift */,
+				85CAA10B1DCBC948003B4270 /* ViewControllerLugar.swift */,
+				854A7C641DDC02ED006B780F /* ViewControllerEvento.swift */,
+				85E3D8C61DDCA6F70072C5D2 /* EventoCelda.swift */,
+				856407A11DD26E990018F69D /* LugarCelda.swift */,
 				85CAA10D1DCBC948003B4270 /* Main.storyboard */,
 				85CAA1101DCBC948003B4270 /* Assets.xcassets */,
 				85CAA1121DCBC948003B4270 /* LaunchScreen.storyboard */,
@@ -125,6 +221,20 @@
 			path = IntegracionwpUITests;
 			sourceTree = "<group>";
 		};
+		85CAA1381DCBC9C7003B4270 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85CAA1421DCBC9C7003B4270 /* Alamofire.framework */,
+				85CAA1441DCBC9C7003B4270 /* Alamofire iOS Tests.xctest */,
+				85CAA1461DCBC9C7003B4270 /* Alamofire.framework */,
+				85CAA1481DCBC9C7003B4270 /* Alamofire OSX Tests.xctest */,
+				85CAA14A1DCBC9C7003B4270 /* Alamofire.framework */,
+				85CAA14C1DCBC9C7003B4270 /* Alamofire tvOS Tests.xctest */,
+				85CAA14E1DCBC9C7003B4270 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +245,12 @@
 				85CAA1021DCBC948003B4270 /* Sources */,
 				85CAA1031DCBC948003B4270 /* Frameworks */,
 				85CAA1041DCBC948003B4270 /* Resources */,
+				85CAA1531DCBCB15003B4270 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				85CAA1521DCBCB15003B4270 /* PBXTargetDependency */,
 			);
 			name = Integracionwp;
 			productName = Integracionwp;
@@ -215,6 +327,12 @@
 			mainGroup = 85CAA0FD1DCBC948003B4270;
 			productRefGroup = 85CAA1071DCBC948003B4270 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 85CAA1381DCBC9C7003B4270 /* Products */;
+					ProjectRef = 85CAA1371DCBC9C7003B4270 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				85CAA1051DCBC948003B4270 /* Integracionwp */,
@@ -223,6 +341,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		85CAA1421DCBC9C7003B4270 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 85CAA1411DCBC9C7003B4270 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85CAA1441DCBC9C7003B4270 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 85CAA1431DCBC9C7003B4270 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85CAA1461DCBC9C7003B4270 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 85CAA1451DCBC9C7003B4270 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85CAA1481DCBC9C7003B4270 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 85CAA1471DCBC9C7003B4270 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85CAA14A1DCBC9C7003B4270 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 85CAA1491DCBC9C7003B4270 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85CAA14C1DCBC9C7003B4270 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 85CAA14B1DCBC9C7003B4270 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85CAA14E1DCBC9C7003B4270 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 85CAA14D1DCBC9C7003B4270 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		85CAA1041DCBC948003B4270 /* Resources */ = {
@@ -256,8 +426,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85CAA10C1DCBC948003B4270 /* ViewController.swift in Sources */,
+				854A7C5D1DDBF8E5006B780F /* evento.swift in Sources */,
+				85CAA10C1DCBC948003B4270 /* ViewControllerLugar.swift in Sources */,
+				854A7C651DDC02ED006B780F /* ViewControllerEvento.swift in Sources */,
+				85D28D3C1DDD48D80016A023 /* DetallesControllerEvento.swift in Sources */,
+				85508D641DDBAB55007C60EA /* DetallesController.swift in Sources */,
 				85CAA10A1DCBC948003B4270 /* AppDelegate.swift in Sources */,
+				85526C681DCCD156008A812C /* lugar.swift in Sources */,
+				85E3D8C71DDCA6F70072C5D2 /* EventoCelda.swift in Sources */,
+				856407A21DD26E990018F69D /* LugarCelda.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +466,11 @@
 			isa = PBXTargetDependency;
 			target = 85CAA1051DCBC948003B4270 /* Integracionwp */;
 			targetProxy = 85CAA1261DCBC948003B4270 /* PBXContainerItemProxy */;
+		};
+		85CAA1521DCBCB15003B4270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 85CAA1511DCBCB15003B4270 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -401,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Integracionwp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.je.Integracionwp;
@@ -412,6 +595,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Integracionwp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.je.Integracionwp;
@@ -484,6 +668,7 @@
 				85CAA1301DCBC948003B4270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85CAA1311DCBC949003B4270 /* Build configuration list for PBXNativeTarget "IntegracionwpTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +677,7 @@
 				85CAA1331DCBC949003B4270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85CAA1341DCBC949003B4270 /* Build configuration list for PBXNativeTarget "IntegracionwpUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +686,7 @@
 				85CAA1361DCBC949003B4270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
